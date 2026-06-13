@@ -25,6 +25,7 @@ import { ProgramsRunning } from "@/components/sections/ProgramsRunning";
 import { OurExperiences } from "@/components/sections/OurExperiences";
 import { Conclusion } from "@/components/sections/Conclusion";
 import { MotivateJoin } from "@/components/sections/MotivateJoin";
+import { VideoShowcase } from "@/components/sections/VideoShowcase";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -111,6 +112,7 @@ function Index() {
 
         {/* The Experience */}
         <Moments />
+        <VideoShowcase />
 
         {/* Personal Journeys */}
         <div className="relative z-20 bg-white/80 backdrop-blur-md border-y border-slate-200 py-12 shadow-sm my-12">
