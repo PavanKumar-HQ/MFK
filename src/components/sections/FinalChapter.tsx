@@ -45,10 +45,7 @@ export function FinalChapter() {
           <div className="flex flex-wrap items-center justify-center gap-3 font-display text-xl sm:text-2xl font-bold tracking-widest text-navy">
             <TribeMark size={64} />
             <span className="flex items-center gap-2 whitespace-nowrap">
-              TRIBE <span className="text-sky">×</span> VARSITY TRIBE
-            </span>
-            <span className="flex items-center gap-2 whitespace-nowrap">
-              <span className="text-sky">×</span> MENTORS FOR KIDS
+              TRIBE <span className="text-sky">×</span> MENTORS FOR KIDS
             </span>
             <MfkLogo size={64} className="ml-2" />
           </div>

@@ -77,13 +77,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MFK × Tribe — A Varsity Tribe Experience at Zerodha" },
+      { title: "MFK × Tribe — A Varsity Initiative Experience at Zerodha" },
       {
         name: "description",
         content:
           "An immersive story of the day MBA students from MFK met Tribe members — conversations, activities, reflections and the impact that followed.",
       },
-      { name: "author", content: "Tribe × Varsity Tribe" },
+      { name: "author", content: "Tribe × MFK" },
       { property: "og:title", content: "MFK × Tribe — An Immersive Experience" },
       {
         property: "og:description",

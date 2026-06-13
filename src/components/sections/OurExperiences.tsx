@@ -25,7 +25,7 @@ export function OurExperiences() {
           Reflections
         </h2>
         <h3 className="font-display text-4xl md:text-6xl font-bold text-navy mb-4">
-          How we from Zerodha Varsity Tribe have contributed so far
+          How we from Zerodha Varsity have contributed so far
         </h3>
       </motion.div>
 

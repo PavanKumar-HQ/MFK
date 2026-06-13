@@ -62,7 +62,7 @@ export function Loader({ onComplete }: { onComplete: () => void }) {
                   transition={{ duration: 0.6, delay: 0.8 }}
                   className="font-display text-2xl font-semibold tracking-[0.3em] text-navy sm:text-4xl"
                 >
-                  TRIBE <span className="text-sky">×</span> VARSITY TRIBE
+                  TRIBE
                 </motion.h1>
               )}
               {stage >= 2 && (
