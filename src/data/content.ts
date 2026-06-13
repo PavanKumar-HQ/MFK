@@ -102,6 +102,19 @@ export const tribeMembers: TribeMember[] = [
     ],
     accent: "sky",
   },
+  {
+    id: "patel-afan",
+    name: "Patel Afan",
+    role: "Tribe Member",
+    intro: "Led the Collaborative Business & Investment Analysis session.",
+    activity: "Collaborative Business & Investment Analysis",
+    reflection:
+      "Gained valuable insights into diverse investment philosophies, business thinking patterns, and practical approaches to risk assessment. Improved communication, teamwork, critical thinking, and financial analysis skills through active participation.",
+    memorableMoment:
+      "Exchanging contrasting viewpoints on sector selection and portfolio diversification helped me appreciate how multiple perspectives can lead to stronger investment and business decisions.",
+    gallery: [],
+    accent: "lavender",
+  },
 ];
 
 export type Activity = {
@@ -238,6 +251,17 @@ export const activities: Activity[] = [
     studentReaction: "“Supporting my ideas with evidence rather than just emotion completely changed my approach.”",
     accent: "sky",
   },
+  {
+    id: "business-analysis",
+    name: "Collaborative Business & Investment Analysis",
+    objective: "To understand different approaches to business decision-making, stock market investing, sector analysis, and risk management through teamwork and interactive discussions.",
+    how: "Engaged with MBA students and Varsity Tribe members through debates, discussions, and collaborative activities. Analyzed various sectors, investment opportunities, diversification strategies, and risk factors while understanding how different individuals evaluate businesses and financial markets.",
+    participation: "MBA students and Tribe members worked together in teams to debate sector performance and critique investment models.",
+    result: "Developed a deeper understanding of market analysis, investment diversification, risk management, and collaborative problem-solving while building confidence in discussing business and financial concepts with peers from different backgrounds.",
+    tribeReflection: "Gained valuable insights into diverse investment philosophies, business thinking patterns, and practical approaches to risk assessment.",
+    studentReaction: "“Exchanging contrasting viewpoints on sector selection and portfolio diversification helped me appreciate how multiple perspectives can lead to stronger investment and business decisions.”",
+    accent: "lavender",
+  },
 ];
 
 export type Feedback = {
@@ -327,6 +351,14 @@ export const reflections: ReflectionCard[] = [
     author: "Azeem",
     accent: "sky",
   },
+  {
+    id: "r6",
+    prompt: "COLLABORATIVE ANALYSIS",
+    quote:
+      "Gained valuable insights into diverse investment philosophies, business thinking patterns, and practical approaches to risk assessment. Exchanging contrasting viewpoints on sector selection helped us appreciate how multiple perspectives lead to stronger decisions.",
+    author: "Patel Afan",
+    accent: "lavender",
+  },
 ];
 
 export type TimelineStop = {
@@ -396,7 +428,7 @@ export const impactStats: ImpactStat[] = [
 export const recognition: { group: string; names: string[] }[] = [
   {
     group: "Tribe Members",
-    names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem"],
+    names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem", "Patel Afan"],
   },
   { group: "MFK Participants", names: ["The 6 students who showed up curious"] },
   { group: "Volunteers", names: ["Sriram", "Patel Afan", "The team behind the scenes"] },

@@ -58,8 +58,7 @@ export function Members() {
             Meet the Tribe & Activities
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground text-lg">
-            Three mentors. Three perspectives. Tap any card to open their story and see the activity
-            they conducted.
+            Tap any card to open their story and see the activity they conducted.
           </p>
         </Reveal>
 
