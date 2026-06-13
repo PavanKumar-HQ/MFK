@@ -19,7 +19,7 @@ export function ImpactCreated() {
               The impact we created with them
             </h2>
             <p className="mt-8 text-xl leading-relaxed text-slate-600">
-              Over the course of an intensive 9-hour day, we engaged 48 students across 8 distinct simulations and activities. The results were immediate and inspiring. Students who started the day hesitant were soon actively debating simulated market shocks, identifying cognitive biases, and building rapid product prototypes. Beyond just learning how to read charts or understand the 'ripple effect' of financial decisions, they walked away with stronger analytical skills, improved teamwork, and a profound realization that patience, self-awareness, and active listening are their greatest assets.
+              Over the course of an intensive 9-hour day, we engaged 6 students across 8 distinct simulations and activities. The results were immediate and inspiring. Students who started the day hesitant were soon actively debating simulated market shocks, identifying cognitive biases, and building rapid product prototypes. Beyond just learning how to read charts or understand the 'ripple effect' of financial decisions, they walked away with stronger analytical skills, improved teamwork, and a profound realization that patience, self-awareness, and active listening are their greatest assets.
             </p>
           </div>
         </div>

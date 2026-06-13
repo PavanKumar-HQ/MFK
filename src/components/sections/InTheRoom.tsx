@@ -15,7 +15,7 @@ export function InTheRoom() {
         <div className="mt-20 grid grid-cols-1 items-center gap-10 md:grid-cols-3">
           <Reveal>
             <div className="glass rounded-3xl p-8 text-center">
-              <div className="font-display text-5xl font-bold text-sky">48</div>
+              <div className="font-display text-5xl font-bold text-sky">6</div>
               <p className="mt-2 font-display text-2xl">MBA Students</p>
               <p className="mt-2 text-sm text-muted-foreground">From MFK, hungry to learn.</p>
             </div>

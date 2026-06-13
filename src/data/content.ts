@@ -385,7 +385,7 @@ export type ImpactStat = {
 };
 
 export const impactStats: ImpactStat[] = [
-  { id: "s1", value: 48, suffix: "", label: "Students Participated" },
+  { id: "s1", value: 6, suffix: "", label: "Students Participated" },
   { id: "s2", value: 8, suffix: "", label: "Activities Conducted" },
   { id: "s3", value: 120, suffix: "+", label: "Feedback Collected" },
   { id: "s4", value: 6, suffix: "", label: "Tribe Members Engaged" },
@@ -398,7 +398,7 @@ export const recognition: { group: string; names: string[] }[] = [
     group: "Tribe Members",
     names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem"],
   },
-  { group: "MFK Participants", names: ["The 48 students who showed up curious"] },
+  { group: "MFK Participants", names: ["The 6 students who showed up curious"] },
   { group: "Volunteers", names: ["The team behind the scenes"] },
   { group: "Organizers", names: ["Komal Sharma", "Varsity Tribe Core Team"] },
   { group: "Mentors", names: ["Tribe Mentor Network"] },
