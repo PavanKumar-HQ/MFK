@@ -352,7 +352,7 @@ export const impactStats: ImpactStat[] = [
 export const recognition: { group: string; names: string[] }[] = [
   {
     group: "Tribe Members",
-    names: ["Aanya Rao", "Vikram Shetty", "Meera Iyer", "Arjun Nair", "Priya Menon", "Rahul Verma"],
+    names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem"],
   },
   { group: "MFK Participants", names: ["The 48 students who showed up curious"] },
   { group: "Volunteers", names: ["The team behind the scenes"] },

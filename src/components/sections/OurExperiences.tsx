@@ -39,20 +39,28 @@ export function OurExperiences() {
         {reflections.map((item, idx) => (
           <motion.div
             key={item.id}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            whileHover={{ y: -8, scale: 1.02, rotate: idx % 2 === 0 ? 1 : -1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.7, delay: 0.1 * idx }}
-            className="flex flex-col sm:flex-row gap-6 items-start"
+            transition={{ duration: 0.5, delay: 0.1 * idx }}
+            className="flex flex-col gap-6 items-start bg-white rounded-3xl p-8 md:p-10 shadow-sm border border-slate-100 hover:shadow-xl relative overflow-hidden group"
           >
-            <div className={`w-16 h-16 shrink-0 rounded-full flex items-center justify-center font-display font-bold text-2xl ${getAccentColor(item.accent)}`}>
+            <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity duration-500">
+              <span className={`font-serif text-9xl ${getAccentColor(item.accent).split(' ')[1]}`}>"</span>
+            </div>
+            
+            <div className={`w-16 h-16 shrink-0 rounded-2xl flex items-center justify-center font-display font-bold text-3xl shadow-sm ${getAccentColor(item.accent)}`}>
               "
             </div>
-            <div>
-              <p className="text-lg text-slate-700 italic mb-4 leading-relaxed">
+            <div className="flex-grow flex flex-col justify-between">
+              <p className="text-lg text-slate-700 italic mb-8 leading-relaxed relative z-10">
                 "{item.quote}"
               </p>
-              <p className="font-semibold text-navy">— {item.author}</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="h-px flex-grow bg-slate-100"></div>
+                <p className="font-bold text-navy text-lg">— {item.author}</p>
+              </div>
             </div>
           </motion.div>
         ))}
