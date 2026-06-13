@@ -194,6 +194,50 @@ export const activities: Activity[] = [
     studentReaction: "“We learned to collaborate effectively and defend our ideas confidently.”",
     accent: "coral",
   },
+  {
+    id: "practical-investing",
+    name: "Practical Investing Basics",
+    objective: "Demystify investing fundamentals and live trade dynamics.",
+    how: "Guided students through live trading terminals, reading charts, analyzing factsheets, and order placing.",
+    participation: "Every student followed along on laptops using actual platforms like Nifty Indices, Kite and Coin.",
+    result: "Students understood market vs limit orders and felt confident reading stock charts.",
+    tribeReflection: "They got to read charts, factsheets, and practically understand market and limit orders.",
+    studentReaction: "“I can actually read stock charts now. It feels less like magic and more like a logic game.”",
+    accent: "sky",
+  },
+  {
+    id: "ripple-effect",
+    name: "Ripple Effect",
+    objective: "Trace how a single financial event triggers cascading consequences.",
+    how: "Facilitated a cause-and-effect mapping exercise around financial choices and market shocks.",
+    participation: "Students brainstormed and debated various outcomes, mapping the connections on a board.",
+    result: "Realized how interconnected financial decisions are and developed systemic thinking.",
+    tribeReflection: "I really enjoyed facilitating the discussion and brainstorming different possibilities.",
+    studentReaction: "“It's amazing how a change in interest rates affects so many parts of my daily life.”",
+    accent: "lavender",
+  },
+  {
+    id: "art-of-hosting",
+    name: "The Art of Hosting",
+    objective: "Learn active listening and adaptive communication in group facilitation.",
+    how: "Co-hosted a dynamic discussion using real-time listener feedback and open-ended inquiry.",
+    participation: "Engaged the entire audience in shared stories and spontaneous reflections.",
+    result: "Fostered deep, genuine conversation instead of rigid Q&As.",
+    tribeReflection: "Stay in the session and be present—active listening is the key to genuine conversations.",
+    studentReaction: "“It felt less like an interview and more like a real, flowing conversation.”",
+    accent: "yellow",
+  },
+  {
+    id: "group-discussion",
+    name: "Structured Group Discussion",
+    objective: "Articulate opinions clearly and defend viewpoints with structured reasoning.",
+    how: "Moderated debates on complex prompts, focusing on logic, structure, and evidence.",
+    participation: "Each student selected a topic, prepared arguments, and presented their case with active peer critique.",
+    result: "Students learned how to simplify complex ideas and speak with structure and clarity.",
+    tribeReflection: "Interacting with students taught me how to simplify ideas and communicate clearly.",
+    studentReaction: "“Supporting my ideas with evidence rather than just emotion completely changed my approach.”",
+    accent: "sky",
+  },
 ];
 
 export type Feedback = {
@@ -220,14 +264,14 @@ export const feedback: Feedback[] = [
   },
   {
     id: "f3",
-    author: "MKF Student",
+    author: "MFK Student",
     theme: "Activities",
     quote:
       "The program was incredibly interactive, with rapid-fire sessions, real-life scenarios, and company case studies that strengthened our decision-making abilities. A key highlight was Sameer's investment session—his practical insights and easy-to-understand explanations made complex topics both interesting and informative.",
   },
   {
     id: "f4",
-    author: "MKF Student",
+    author: "MFK Student",
     theme: "Confidence",
     quote:
       "The session included situation-based discussions, creative thinking exercises, and team activities that improved our critical thinking and problem-solving skills. The business case analysis, where we proposed practical solutions for companies facing challenges, provided valuable learning beyond classroom concepts.",

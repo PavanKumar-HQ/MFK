@@ -89,7 +89,7 @@ export function StudentVoices() {
                 <div className="mt-auto pt-6 border-t border-slate-100 flex items-center justify-between">
                   <div>
                     <h4 className="font-bold text-navy text-lg">{f.author}</h4>
-                    <span className="text-sm text-slate-500">MKF Student</span>
+                    <span className="text-sm text-slate-500">MFK Student</span>
                   </div>
                   <span className="rounded-full bg-slate-100 px-4 py-1.5 text-sm font-medium text-navy">
                     {f.theme}
