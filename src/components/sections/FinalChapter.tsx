@@ -80,7 +80,7 @@ export function FinalChapter() {
       </motion.div>
 
       <footer className="mt-20 text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">
-        Presented at Zerodha · June 14
+        Presented on June 14th
       </footer>
     </section>
   );
