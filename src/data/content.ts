@@ -77,7 +77,11 @@ export const tribeMembers: TribeMember[] = [
     memorableMoment:
       "Co-hosting my first session and learning to focus on active listening rather than strictly prepared questions.",
     gallery: [
+      { src: "/photos/Piyush activity/IMG_0094.jpg", title: "Activity Start" },
       { src: "/photos/Piyush activity/IMG_0100.jpg", title: "Hosting the Session" },
+      { src: "/photos/Piyush activity/IMG_0101.jpg", title: "Group Discussion" },
+      { src: "/photos/Piyush activity/IMG_0108.jpg", title: "Explaining Concepts" },
+      { src: "/photos/Piyush activity/IMG_0113.jpg", title: "Engaging the Audience" },
       { src: "/photos/Piyush activity/IMG_0115.jpg", title: "Active Listening" }
     ],
     accent: "yellow",
