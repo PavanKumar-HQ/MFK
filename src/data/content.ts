@@ -399,7 +399,7 @@ export const recognition: { group: string; names: string[] }[] = [
     names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem"],
   },
   { group: "MFK Participants", names: ["The 6 students who showed up curious"] },
-  { group: "Volunteers", names: ["The team behind the scenes"] },
+  { group: "Volunteers", names: ["Sriram", "Patel Afan", "The team behind the scenes"] },
   { group: "Organizers", names: ["Komal Sharma", "Varsity Tribe Core Team"] },
   { group: "Mentors", names: ["Tribe Mentor Network"] },
   { group: "Supporters", names: ["Zerodha · Varsity"] },
