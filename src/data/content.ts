@@ -126,7 +126,8 @@ export const tribeMembers: TribeMember[] = [
     memorableMoment:
       "Overall, it was a great experience to talk to students with similar finance backgrounds, and I have great appreciation for our tribe members who came up with great activities and energy!",
     gallery: [
-      { src: "/photos/chirag activity/icebreaker.jpg", title: "Icebreaker Activity" }
+      { src: "/photos/chirag activity/icebreaker.jpg", title: "Icebreaker Activity" },
+      { src: "/photos/chirag activity/icebreaker-circle.jpg", title: "Introduction Circle" }
     ],
     accent: "yellow",
   },
