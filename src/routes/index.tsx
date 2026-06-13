@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Loader } from "@/components/tribe/Loader";
 import { ScrollProgress } from "@/components/tribe/ScrollProgress";
 import { TribeMark } from "@/components/tribe/TribeMark";
+import { TribeLogo } from "@/components/tribe/TribeLogo";
 import { MfkLogo } from "@/components/tribe/MfkLogo";
 import { Hero } from "@/components/sections/Hero";
 import { InTheRoom } from "@/components/sections/InTheRoom";
@@ -78,15 +79,12 @@ function Index() {
       {!loaded && <Loader onComplete={() => setLoaded(true)} />}
       <ScrollProgress />
 
-      <div className="fixed left-6 top-5 z-[70] flex items-center gap-3 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full shadow-md border border-navy/10 transition-all hover:shadow-lg">
-        <MfkLogo size={26} />
+      <div className="fixed left-6 top-5 z-[70] flex items-center gap-3 bg-white/90 backdrop-blur-md px-5 py-2.5 rounded-full shadow-md border border-navy/10 transition-all hover:shadow-lg">
+        <MfkLogo size={28} />
         <span className="font-display text-sm font-semibold tracking-widest text-navy/50">
           ×
         </span>
-        <TribeMark size={22} />
-        <span className="font-display text-sm font-semibold tracking-[0.2em] text-navy">
-          TRIBE
-        </span>
+        <TribeLogo size={28} />
       </div>
 
       <div className="relative z-10">

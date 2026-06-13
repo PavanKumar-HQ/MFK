@@ -3,6 +3,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import heroImg from "@/assets/hero-montage.jpg";
 import { MfkLogo } from "@/components/tribe/MfkLogo";
 import { TribeMark } from "@/components/tribe/TribeMark";
+import { VarsityLogo } from "@/components/tribe/VarsityLogo";
 
 const words = ["Conversations.", "Perspectives.", "Learning.", "Impact."];
 
@@ -81,6 +82,18 @@ export function Hero({ loaded = true }: { loaded?: boolean }) {
             <span className="text-white">TRIBE</span>
           </div>
         </motion.h1>
+
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={loaded ? { opacity: 1, y: 0 } : { opacity: 0, y: 15 }}
+          transition={{ duration: 0.9, delay: 5.0, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-6 flex items-center justify-center gap-2 text-xs font-semibold text-white/50 tracking-[0.2em] uppercase"
+        >
+          <span className="normal-case text-white/70 font-normal">A Zerodha</span>
+          <VarsityLogo size={16} className="mx-0.5 opacity-90 shadow-md" />
+          <span className="text-white font-bold tracking-widest">Varsity</span>
+          <span className="normal-case text-white/70 font-normal">initiative</span>
+        </motion.div>
       </motion.div>
 
       <motion.div

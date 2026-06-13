@@ -10,38 +10,42 @@ export function TribeMark({
   className?: string;
   animate?: boolean;
 }) {
-  const bars = [
-    { rotate: 0, color: "var(--lavender)" },
-    { rotate: 45, color: "var(--coral)" },
-    { rotate: 90, color: "var(--yellow)" },
-    { rotate: 135, color: "var(--sky)" },
+  const spokes = [
+    { rotate: 90, color: "var(--navy)", type: "flat" },        // Right
+    { rotate: 270, color: "var(--yellow)", type: "flat" },     // Left
+    { rotate: 180, color: "var(--navy)", type: "flat" },       // Bottom
+    { rotate: 315, color: "var(--navy)", type: "flat" },       // Top-left
+    { rotate: 135, color: "var(--coral)", type: "ribbon" },    // Bottom-right
+    { rotate: 0, color: "var(--lavender)", type: "ribbon" },   // Top
+    { rotate: 45, color: "#A8D1FA", type: "ribbon" },          // Top-right
+    { rotate: 225, color: "#5398FF", type: "ribbon" },         // Bottom-left
   ];
+
+  // Viewbox coordinates: center is (50, 50). Spokes go from y=50 to y=10.
+  // Width is 16 (from x=42 to x=58).
+  const flatD = "M 42 50 L 42 10 L 58 10 L 58 50 Z";
+  const ribbonD = "M 42 50 L 42 10 L 50 18 L 58 10 L 58 50 Z";
+
   return (
-    <div
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 100 100"
       className={className}
-      style={{ width: size, height: size, position: "relative" }}
       aria-hidden
     >
-      {bars.map((b, i) => (
-        <motion.span
-          key={i}
-          initial={animate ? { scaleY: 0, opacity: 0, rotate: b.rotate } : { rotate: b.rotate }}
-          animate={animate ? { scaleY: 1, opacity: 1, rotate: b.rotate } : { rotate: b.rotate }}
-          transition={{ delay: 0.15 * i, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            width: size * 0.16,
-            height: size,
-            marginLeft: -(size * 0.08),
-            marginTop: -(size / 2),
-            borderRadius: size * 0.08,
-            background: b.color,
-            transformOrigin: "center",
-          }}
-        />
+      {spokes.map((s, i) => (
+        <g key={i} transform={`rotate(${s.rotate}, 50, 50)`}>
+          <motion.path
+            d={s.type === "ribbon" ? ribbonD : flatD}
+            fill={s.color}
+            style={{ transformOrigin: "50px 50px" }}
+            initial={animate ? { scaleY: 0, opacity: 0 } : { scaleY: 1, opacity: 1 }}
+            animate={animate ? { scaleY: 1, opacity: 1 } : { scaleY: 1, opacity: 1 }}
+            transition={{ delay: 0.15 * i, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          />
+        </g>
       ))}
-    </div>
+    </svg>
   );
 }
