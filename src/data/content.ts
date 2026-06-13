@@ -115,6 +115,19 @@ export const tribeMembers: TribeMember[] = [
     gallery: [],
     accent: "lavender",
   },
+  {
+    id: "chirag",
+    name: "Chirag",
+    role: "Tribe Member",
+    intro: "Facilitated the Icebreaker session to kickstart conversations.",
+    activity: "Icebreaker",
+    reflection:
+      "Being kind and open-minded can make you learn and understand a person or a situation better! With MFK, it was a great exposure to students who come with different perspectives around finance.",
+    memorableMoment:
+      "Overall, it was a great experience to talk to students with similar finance backgrounds, and I have great appreciation for our tribe members who came up with great activities and energy!",
+    gallery: [],
+    accent: "yellow",
+  },
 ];
 
 export type Activity = {
@@ -262,6 +275,17 @@ export const activities: Activity[] = [
     studentReaction: "“Exchanging contrasting viewpoints on sector selection and portfolio diversification helped me appreciate how multiple perspectives can lead to stronger investment and business decisions.”",
     accent: "lavender",
   },
+  {
+    id: "icebreaker",
+    name: "Icebreaker",
+    objective: "Dissolve initial nervousness and establish open lines of communication.",
+    how: "Interactive introduction rounds and connection-building team games.",
+    participation: "Every MBA student and Tribe member in the room engaged and shared.",
+    result: "Established a warm, high-energy, and collaborative atmosphere for the rest of the day.",
+    tribeReflection: "Being kind and open-minded makes it easier to learn and understand a person or a situation better.",
+    studentReaction: "“The icebreakers broke down all barriers, making it feel natural to talk about finance and learn together.”",
+    accent: "yellow",
+  },
 ];
 
 export type Feedback = {
@@ -359,6 +383,14 @@ export const reflections: ReflectionCard[] = [
     author: "Patel Afan",
     accent: "lavender",
   },
+  {
+    id: "r7",
+    prompt: "OPEN-MINDED LEARNING",
+    quote:
+      "Being kind and open minded can make you learn and understand a person or a situation better! With MFK, it was a great exposure to students who come with different perspectives around finance.",
+    author: "Chirag",
+    accent: "yellow",
+  },
 ];
 
 export type TimelineStop = {
@@ -428,7 +460,7 @@ export const impactStats: ImpactStat[] = [
 export const recognition: { group: string; names: string[] }[] = [
   {
     group: "Tribe Members",
-    names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem", "Patel Afan"],
+    names: ["Sameer", "Kavya", "Pavan Kumar", "Piyush", "Azeem", "Patel Afan", "Chirag"],
   },
   { group: "MFK Participants", names: ["The 6 students who showed up curious"] },
   { group: "Volunteers", names: ["Sriram", "Patel Afan", "The team behind the scenes"] },
