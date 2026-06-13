@@ -388,7 +388,7 @@ export const impactStats: ImpactStat[] = [
   { id: "s1", value: 6, suffix: "", label: "Students Participated" },
   { id: "s2", value: 8, suffix: "", label: "Activities Conducted" },
   { id: "s3", value: 120, suffix: "+", label: "Feedback Collected" },
-  { id: "s4", value: 6, suffix: "", label: "Tribe Members Engaged" },
+  { id: "s4", value: 8, suffix: "", label: "Tribe Members Engaged" },
   { id: "s5", value: 9, suffix: "h", label: "Hours Contributed" },
   { id: "s6", value: 300, suffix: "+", label: "Meaningful Conversations" },
 ];

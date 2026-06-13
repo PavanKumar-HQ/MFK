@@ -53,7 +53,7 @@ export function InTheRoom() {
 
           <Reveal>
             <div className="glass rounded-3xl p-8 text-center">
-              <div className="font-display text-5xl font-bold text-coral">6</div>
+              <div className="font-display text-5xl font-bold text-coral">8</div>
               <p className="mt-2 font-display text-2xl">Tribe Members</p>
               <p className="mt-2 text-sm text-muted-foreground">Mentors, ready to share.</p>
             </div>
