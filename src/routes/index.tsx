@@ -98,15 +98,15 @@ function Index() {
           <ProblemsSolving />
         </div>
 
-        {/* The Event Context */}
-        <InTheRoom />
-        <Members />
-
         {/* Initiatives & Programs */}
         <div className="relative z-20 bg-white/80 backdrop-blur-md border-y border-slate-200 py-12 shadow-sm my-12">
           <SetuProgram />
           <ProgramsRunning />
         </div>
+
+        {/* The Event Context */}
+        <InTheRoom />
+        <Members />
 
         {/* The Experience */}
         <Moments />

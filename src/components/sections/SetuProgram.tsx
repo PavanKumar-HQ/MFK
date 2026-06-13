@@ -92,40 +92,28 @@ export function SetuProgram() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-2xl md:text-3xl font-display text-navy mb-16 leading-snug font-medium"
+              className="text-2xl md:text-3xl font-display text-navy mb-12 leading-snug font-medium"
             >
-              Through interactions with founders, leaders, investors, and technologists, our
-              students gained first-hand exposure to how businesses are built, scaled, governed, and
-              transformed.
+              Through interactions with founders, leaders, investors, and technologists, MFK
+              students gained first-hand exposure to how businesses are built, scaled, and governed.
             </motion.p>
 
-            <div className="space-y-12">
+            <div className="space-y-8">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-2"
               >
                 <div>
-                  <h4 className="text-navy font-display text-2xl font-bold flex items-center gap-3">
+                  <h4 className="text-navy font-display text-xl font-bold flex items-center gap-3">
                     Finance & Tech
                   </h4>
-                  <div className="h-[2px] w-12 bg-coral mt-3" />
+                  <div className="h-[2px] w-12 bg-coral mt-2" />
                 </div>
-                <div className="text-lg text-slate-600 leading-relaxed space-y-4">
-                  <p>
-                    From understanding AI-driven accounting with <strong>Harsha Shastry</strong>{" "}
-                    (Cadel.ai) and <strong>Sanjay Hegde</strong>, to corporate governance with{" "}
-                    <strong>Sharada SC</strong> and <strong>Tarun SatyaVageeshwar</strong>, students
-                    experienced commerce beyond textbooks.
-                  </p>
-                  <p>
-                    A special visit to <strong>Zerodha Varsity</strong> was made possible by{" "}
-                    <strong>Karthik Rangappa</strong>, <strong>Komal Sharma</strong>, and the
-                    Varsity Tribe members, creating an incredibly engaging environment around
-                    finance and markets.
-                  </p>
-                </div>
+                <p className="text-base text-slate-600 leading-relaxed">
+                  AI-driven accounting & governance with <strong>Harsha Shastry</strong>, <strong>Sanjay Hegde</strong>, <strong>Sharada SC</strong>, and <strong>Tarun SatyaVageeshwar</strong>, plus a markets immersion at <strong>Zerodha Varsity</strong> with <strong>Karthik Rangappa</strong> and <strong>Komal Sharma</strong>.
+                </p>
               </motion.div>
 
               <div className="w-full h-[1px] bg-slate-100" />
@@ -134,26 +122,17 @@ export function SetuProgram() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-2"
               >
                 <div>
-                  <h4 className="text-navy font-display text-2xl font-bold flex items-center gap-3">
+                  <h4 className="text-navy font-display text-xl font-bold flex items-center gap-3">
                     VC & Leadership
                   </h4>
-                  <div className="h-[2px] w-12 bg-sky mt-3" />
+                  <div className="h-[2px] w-12 bg-sky mt-2" />
                 </div>
-                <div className="text-lg text-slate-600 leading-relaxed space-y-4">
-                  <p>
-                    Interactions with <strong>Naganand Doraswamy</strong> (Ideaspring Capital),
-                    Standard Chartered teams, and <strong>Achuth Gowda</strong> (Fidelitus Corp)
-                    opened doors to venture capital and entrepreneurship.
-                  </p>
-                  <p>
-                    At Embark Group, <strong>Aravind Maiya</strong> and{" "}
-                    <strong>Nimmi Sebastian</strong> conducted powerful sessions on leadership and
-                    resilience.
-                  </p>
-                </div>
+                <p className="text-base text-slate-600 leading-relaxed">
+                  Venture capital with <strong>Naganand Doraswamy</strong>, corporate exposure with Standard Chartered & <strong>Achuth Gowda</strong> (Fidelitus), and leadership lessons from <strong>Aravind Maiya</strong> & <strong>Nimmi Sebastian</strong>.
+                </p>
               </motion.div>
 
               <div className="w-full h-[1px] bg-slate-100" />
@@ -162,21 +141,17 @@ export function SetuProgram() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-2"
               >
                 <div>
-                  <h4 className="text-navy font-display text-2xl font-bold flex items-center gap-3">
+                  <h4 className="text-navy font-display text-xl font-bold flex items-center gap-3">
                     Innovation
                   </h4>
-                  <div className="h-[2px] w-12 bg-lavender mt-3" />
+                  <div className="h-[2px] w-12 bg-lavender mt-2" />
                 </div>
-                <div className="text-lg text-slate-600 leading-relaxed space-y-4">
-                  <p>
-                    Students explored the future of agritech with <strong>Krishikan</strong>,
-                    followed by a deep dive into incubation at IISc’s FSID with{" "}
-                    <strong>L Tulasi Gandikota</strong>.
-                  </p>
-                </div>
+                <p className="text-base text-slate-600 leading-relaxed">
+                  Exploring advanced agritech solutions with <strong>Krishikan</strong> and start-up incubation models at IISc’s FSID with <strong>L Tulasi Gandikota</strong>.
+                </p>
               </motion.div>
             </div>
           </div>
@@ -189,7 +164,7 @@ export function SetuProgram() {
           className="mt-24 text-center bg-sky/5 p-12 rounded-3xl"
         >
           <p className="font-display text-3xl text-navy font-bold mb-6">
-            Proud of our students for their curiosity and willingness to learn.
+            Proud of the MFK students for their curiosity and willingness to learn.
           </p>
           <p className="text-coral font-medium tracking-widest uppercase text-sm mb-8">
             Shrivrinda P. • Nayana • Nandhana P. • Srijanya Poojary • Shwetha . • Shifa Banu
