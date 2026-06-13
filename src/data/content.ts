@@ -125,7 +125,9 @@ export const tribeMembers: TribeMember[] = [
       "Being kind and open-minded can make you learn and understand a person or a situation better! With MFK, it was a great exposure to students who come with different perspectives around finance.",
     memorableMoment:
       "Overall, it was a great experience to talk to students with similar finance backgrounds, and I have great appreciation for our tribe members who came up with great activities and energy!",
-    gallery: [],
+    gallery: [
+      { src: "/photos/chirag activity/icebreaker.jpg", title: "Icebreaker Activity" }
+    ],
     accent: "yellow",
   },
 ];
