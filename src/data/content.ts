@@ -86,6 +86,22 @@ export const tribeMembers: TribeMember[] = [
     ],
     accent: "yellow",
   },
+  {
+    id: "azeem",
+    name: "Azeem",
+    role: "Tribe Member",
+    intro: "Facilitated and moderated a structured group discussion.",
+    activity: "Structured Group Discussion",
+    reflection:
+      "Interacting with students taught me how to simplify ideas and communicate in a way that is clear and relatable.",
+    memorableMoment:
+      "Guiding participants through topic selection and encouraging them to substantiate their points with logic and personal experience.",
+    gallery: [
+      { src: "/photos/azeem actvity/IMG_9845.jpg", title: "Group Discussion" },
+      { src: "/photos/azeem actvity/IMG_9847.jpg", title: "Structured Reasoning" }
+    ],
+    accent: "sky",
+  },
 ];
 
 export type Activity = {
@@ -258,6 +274,14 @@ export const reflections: ReflectionCard[] = [
       "Co-hosting my first session alongside Vishal Krishna sir was a major learning experience. Initially nervous and focused strictly on prepared questions, I received valuable advice to 'stay in the session' and be present. This taught me not just about public speaking, but the importance of active listening to foster genuine conversations.",
     author: "Piyush",
     accent: "yellow",
+  },
+  {
+    id: "r5",
+    prompt: "STRUCTURED DISCUSSION",
+    quote:
+      "My experience at Mentor for Kids Foundation was very meaningful. I took responsibility for facilitating and moderating a structured group discussion, encouraging participants to support their point of views with clear reasoning. This experience strengthened my facilitation, communication, and moderation skills.",
+    author: "Azeem",
+    accent: "sky",
   },
 ];
 

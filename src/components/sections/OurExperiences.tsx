@@ -1,6 +1,17 @@
 import { motion } from "motion/react";
+import { reflections } from "../../data/content";
 
 export function OurExperiences() {
+  const getAccentColor = (accent: string) => {
+    switch(accent) {
+      case 'sky': return 'bg-sky/20 text-sky';
+      case 'lavender': return 'bg-lavender/20 text-lavender';
+      case 'coral': return 'bg-coral/20 text-coral';
+      case 'yellow': return 'bg-yellow/20 text-yellow';
+      default: return 'bg-sky/20 text-sky';
+    }
+  };
+
   return (
     <section className="relative py-24 px-6 md:px-12 max-w-7xl mx-auto min-h-[60vh] flex flex-col justify-center">
       <motion.div
@@ -25,25 +36,23 @@ export function OurExperiences() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mb-20">
-        {/* Placeholder for individual experiences */}
-        {[1, 2, 3, 4].map((item, idx) => (
+        {reflections.map((item, idx) => (
           <motion.div
-            key={idx}
+            key={item.id}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 * idx }}
             className="flex flex-col sm:flex-row gap-6 items-start"
           >
-            <div className="w-16 h-16 shrink-0 rounded-full bg-sky/20 flex items-center justify-center font-display font-bold text-sky text-2xl">
+            <div className={`w-16 h-16 shrink-0 rounded-full flex items-center justify-center font-display font-bold text-2xl ${getAccentColor(item.accent)}`}>
               "
             </div>
             <div>
               <p className="text-lg text-slate-700 italic mb-4 leading-relaxed">
-                "Individual experience from Zerodha Varsity Tribe member detailing their
-                contribution and journey."
+                "{item.quote}"
               </p>
-              <p className="font-semibold text-navy">— Tribe Member {item}</p>
+              <p className="font-semibold text-navy">— {item.author}</p>
             </div>
           </motion.div>
         ))}

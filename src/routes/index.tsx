@@ -8,21 +8,23 @@ import { Hero } from "@/components/sections/Hero";
 import { InTheRoom } from "@/components/sections/InTheRoom";
 import { Members } from "@/components/sections/Members";
 import { Moments } from "@/components/sections/Moments";
-import { TribeReflections } from "@/components/sections/TribeReflections";
 import { StudentVoices } from "@/components/sections/StudentVoices";
 import { Timeline } from "@/components/sections/Timeline";
 import { Impact } from "@/components/sections/Impact";
+import { ImpactCreated } from "@/components/sections/ImpactCreated";
 import { BehindScenes } from "@/components/sections/BehindScenes";
 import { Ripple } from "@/components/sections/Ripple";
 import { Recognition } from "@/components/sections/Recognition";
 import { FinalChapter } from "@/components/sections/FinalChapter";
 import { Introduction } from "@/components/sections/Introduction";
 import { OurMission } from "@/components/sections/OurMission";
+import { WhyParticipating } from "@/components/sections/WhyParticipating";
 import { ProblemsSolving } from "@/components/sections/ProblemsSolving";
 import { SetuProgram } from "@/components/sections/SetuProgram";
 import { ProgramsRunning } from "@/components/sections/ProgramsRunning";
 import { OurExperiences } from "@/components/sections/OurExperiences";
 import { Conclusion } from "@/components/sections/Conclusion";
+import { MotivateJoin } from "@/components/sections/MotivateJoin";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -93,6 +95,7 @@ function Index() {
         <div className="relative z-20 bg-white/80 backdrop-blur-md border-b border-slate-200 pb-12 shadow-sm">
           <Introduction />
           <OurMission />
+          <WhyParticipating />
           <ProblemsSolving />
         </div>
 
@@ -108,7 +111,6 @@ function Index() {
 
         {/* The Experience */}
         <Moments />
-        <TribeReflections />
 
         {/* Personal Journeys */}
         <div className="relative z-20 bg-white/80 backdrop-blur-md border-y border-slate-200 py-12 shadow-sm my-12">
@@ -119,6 +121,7 @@ function Index() {
         <StudentVoices />
         <Timeline />
         <Impact />
+        <ImpactCreated />
         <BehindScenes />
         <Ripple />
         <Recognition />
@@ -128,6 +131,7 @@ function Index() {
           <Conclusion />
         </div>
 
+        <MotivateJoin />
         <FinalChapter />
       </div>
     </main>
