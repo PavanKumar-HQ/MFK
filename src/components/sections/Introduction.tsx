@@ -47,11 +47,14 @@ export function Introduction() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl"
+          className="relative aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl group"
         >
-          <div className="absolute inset-0 bg-navy/5 flex items-center justify-center">
-            <span className="text-navy/40 font-display text-2xl">Visual / Image Placeholder</span>
-          </div>
+          <img 
+            src="/photos/General/mfk_team.jpg" 
+            alt="MFK team and students" 
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-navy/5 mix-blend-multiply rounded-3xl pointer-events-none" />
         </motion.div>
       </div>
     </section>
