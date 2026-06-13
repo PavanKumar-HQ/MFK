@@ -11,27 +11,27 @@ const problems = [
   },
   {
     title: "Curriculum Gap",
-    desc: "The present curriculums are not up to the industry level. We bridge academia and industry by aligning theoretical knowledge with practical real-world demands.",
+    desc: "The present curriculums are not up to the industry level. MFK bridges academia and industry by aligning theoretical knowledge with practical real-world demands.",
     icon: GraduationCap,
   },
   {
     title: "Cost of Unemployment",
-    desc: "The UNSEEN cost of being UNEMPLOYED. We fix the education-industry gaps that leave graduates underprepared.",
+    desc: "The UNSEEN cost of being UNEMPLOYED. MFK fixes the education-industry gaps that leave graduates underprepared.",
     icon: UserX,
   },
   {
     title: "Slow Career Progression",
-    desc: "Entry-level roles no longer guarantee leadership opportunities due to skill gaps. We provide students continuous skill development for their career growth.",
+    desc: "Entry-level roles no longer guarantee leadership opportunities due to skill gaps. MFK provides students continuous skill development for their career growth.",
     icon: Briefcase,
   },
   {
     title: "Intense Competition",
-    desc: "We provide industry-relevant skills to help them compete in the intense competition in the Job market even internationally.",
+    desc: "MFK provides industry-relevant skills to help them compete in the intense competition in the Job market even internationally.",
     icon: Globe,
   },
   {
     title: "Automation & AI",
-    desc: "Since Automation and AI are reducing entry-level roles, we teach specialized skills for them to remain employable.",
+    desc: "Since Automation and AI are reducing entry-level roles, MFK teaches specialized skills for them to remain employable.",
     icon: BrainCircuit,
   },
 ];
@@ -50,7 +50,7 @@ export function ProblemsSolving() {
           The Challenge
         </h2>
         <h3 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4">
-          What problems are we solving?
+          What problems is MFK solving?
         </h3>
       </motion.div>
 

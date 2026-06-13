@@ -64,7 +64,7 @@ export function ProgramsRunning() {
           Current Efforts
         </h2>
         <h3 className="font-display text-4xl md:text-5xl font-bold text-navy mb-4">
-          Programs we are running
+          Programs MFK is running
         </h3>
       </motion.div>
 
