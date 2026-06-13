@@ -5,15 +5,20 @@ import { Reveal } from "@/components/tribe/Reveal";
 
 export function VideoShowcase() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const bgVideoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
 
   const togglePlay = () => {
-    if (videoRef.current) {
+    const main = videoRef.current;
+    const bg = bgVideoRef.current;
+    if (main && bg) {
       if (isPlaying) {
-        videoRef.current.pause();
+        main.pause();
+        bg.pause();
       } else {
-        videoRef.current.play().catch((err) => console.log("Video play interrupted:", err));
+        main.play().catch((err) => console.log("Video play interrupted:", err));
+        bg.play().catch((err) => console.log("Video play interrupted:", err));
       }
       setIsPlaying(!isPlaying);
     }
@@ -24,6 +29,15 @@ export function VideoShowcase() {
     if (videoRef.current) {
       videoRef.current.muted = !isMuted;
       setIsMuted(!isMuted);
+    }
+  };
+
+  const handleTimeUpdate = () => {
+    if (videoRef.current && bgVideoRef.current) {
+      const diff = Math.abs(videoRef.current.currentTime - bgVideoRef.current.currentTime);
+      if (diff > 0.3) {
+        bgVideoRef.current.currentTime = videoRef.current.currentTime;
+      }
     }
   };
 
@@ -41,21 +55,33 @@ export function VideoShowcase() {
         </Reveal>
 
         <Reveal delay={0.2} className="mt-16 flex justify-center">
-          <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-navy/10 bg-black shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] group cursor-pointer aspect-[9/16] w-full max-w-[380px]" onClick={togglePlay}>
+          <div className="relative overflow-hidden rounded-[2.5rem] border-4 border-navy/10 bg-black shadow-[0_25px_60px_-15px_rgba(0,0,0,0.3)] group cursor-pointer aspect-[16/9] w-full max-w-4xl" onClick={togglePlay}>
+            {/* Blurred Background Video */}
             <video
-              ref={videoRef}
+              ref={bgVideoRef}
               src="/photos/General/capcut edit mfk reel.mp4"
-              className="w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover blur-2xl opacity-40 scale-105 pointer-events-none"
               loop
-              muted={isMuted}
+              muted
               playsInline
             />
 
+            {/* Sharp Foreground Video */}
+            <video
+              ref={videoRef}
+              src="/photos/General/capcut edit mfk reel.mp4"
+              className="relative h-full mx-auto object-contain z-10"
+              loop
+              muted={isMuted}
+              playsInline
+              onTimeUpdate={handleTimeUpdate}
+            />
+
             {/* Custom overlays */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30 opacity-60 transition-opacity group-hover:opacity-80" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/35 opacity-60 transition-opacity group-hover:opacity-80 z-20" />
 
             {/* Central Play/Pause Button overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center z-30">
               <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: isPlaying ? 0.8 : 1, opacity: isPlaying ? 0 : 1 }}
@@ -67,7 +93,7 @@ export function VideoShowcase() {
             </div>
 
             {/* Bottom Controls panel */}
-            <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white z-10 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div className="absolute bottom-6 left-6 right-6 flex items-center justify-between text-white z-30 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
               <span className="text-xs font-semibold tracking-wider bg-black/40 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 uppercase">
                 {isPlaying ? "Playing Reel" : "Paused"}
               </span>
