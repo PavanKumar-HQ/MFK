@@ -66,6 +66,22 @@ export const tribeMembers: TribeMember[] = [
     ],
     accent: "coral",
   },
+  {
+    id: "piyush",
+    name: "Piyush",
+    role: "Tribe Member",
+    intro: "Co-hosted a session alongside Vishal Krishna sir, focusing on the art of hosting.",
+    activity: "The Art of Hosting",
+    reflection:
+      "I received valuable advice to 'stay in the session' and be present. This taught me not just about public speaking, but the importance of active listening to foster genuine conversations.",
+    memorableMoment:
+      "Co-hosting my first session and learning to focus on active listening rather than strictly prepared questions.",
+    gallery: [
+      { src: "/photos/Piyush activity/IMG_0100.jpg", title: "Hosting the Session" },
+      { src: "/photos/Piyush activity/IMG_0115.jpg", title: "Active Listening" }
+    ],
+    accent: "yellow",
+  },
 ];
 
 export type Activity = {
